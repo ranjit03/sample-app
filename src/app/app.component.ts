@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sample';
+  title = 'sample app';
+  userName = 'Awesome'
+  interpolation = "string interpolation passed";
+  changeTitle(event){
+
+    arguments.length === 0 ? this.title ='first method changed title':this.title = event.title;
+  }
+
+
+
 }

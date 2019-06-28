@@ -1,0 +1,7 @@
+<p>first works!</p>
+<p>{{title}} is from main app component</p>
+<p>User name showing in first component as {{userName}}</p>
+
+<button (click)="changeTitle()" >Change title from first</button>
+<hr>
+<app-user (userTitle)="userInput($event)" [userName] = "userName"></app-user>
